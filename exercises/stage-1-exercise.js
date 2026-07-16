@@ -13,8 +13,8 @@ import { foodTruck } from "../fakeData/foodTruckDB.js";
 // Expected output: "Chrome and Burger"
 
 function getTruckName(truck) {
-  // TODO: your code here
-}
+    return truck.name
+};
 
 console.log(getTruckName(foodTruck));
 // "Chrome and Burger"
@@ -27,8 +27,8 @@ console.log(getTruckName(foodTruck));
 // Expected output: true
 
 function isTruckOpen(truck) {
-  // TODO: your code here
-}
+    return truck.isOpen
+};
 
 console.log(isTruckOpen(foodTruck));
 // true
@@ -40,8 +40,8 @@ console.log(isTruckOpen(foodTruck));
 // Expected output: 10000
 
 function getDailySalesTarget(truck) {
-  // TODO: your code here
-}
+    return truck.dailySalesTarget
+};
 
 console.log(getDailySalesTarget(foodTruck));
 // 10000
@@ -54,8 +54,8 @@ console.log(getDailySalesTarget(foodTruck));
 // Expected output: "Chrome and Burger is located in Bangkok."
 
 function describeTruck(truck) {
-  // TODO: your code here
-}
+  return foodTruck.name + " is located in " + foodTruck.location
+};
 
 console.log(describeTruck(foodTruck));
 // "Chrome and Burger is located in Bangkok."
