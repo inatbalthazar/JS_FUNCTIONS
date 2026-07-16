@@ -17,7 +17,7 @@ import { menuItems, orders } from "../fakeData/foodTruckDB.js";
 // Expected output: one item — Neon Cola
 
 function getUnavailableItems(items) {
-  // TODO: your code here
+  return items.filter(menu => !menu.isAvailable)
 }
 
 console.log(getUnavailableItems(menuItems));
@@ -30,7 +30,7 @@ console.log(getUnavailableItems(menuItems));
 // Expected output: Chrome Classic (180), Crispy Circuit Fries (90), Neon Cola (50)
 
 function getAffordableItems(items) {
-  // TODO: your code here
+  return items.filter(menuP => menuP.price < 200)
 }
 
 console.log(getAffordableItems(menuItems));
